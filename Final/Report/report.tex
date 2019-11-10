@@ -1,0 +1,131 @@
+
+\documentclass[a4paper,10pt]{report}
+\begin{document}
+\title{VLSI Assignment - 7 Report}
+\author{Ahish Deshpande}
+\date{\today}
+\maketitle
+
+
+\tableofcontents
+
+\newpage
+
+\renewcommand\thesection{\arabic{section}}
+\section{Aim}
+
+The aim of this assignment is to design ASIC(from Verilog code till GDSII File) using Cadence and perform full FPGA Flow(from Verilog to Dumping code into FPGAs) for the following Digital Blocks:
+\begin{enumerate}
+
+	\item \textbf{Universal Shift Register}
+		\begin{itemize}
+			\item Design using Logic gates \& FF's
+		\end{itemize}
+
+	\item \textbf{FSM}
+		\begin{itemize}
+			\item It is to be implemented as a Moore machine
+			\item CLK used to clock the FSM
+			\item RESET asserted high to reset the FSM to its initial state
+			\item ONE asserted high to input a "1".
+			\item OUT asserted high when at least two "0"s and two "1"s have occurred as inputs. 
+			\item Assuming that all inputs have been externally synchronized with CLK.
+		\end{itemize}
+
+\end{enumerate}
+
+\section{Introduction}
+
+For this assignment, \textbf{Xilinx ISE} and \textbf{Cadence} will be used to do the following:
+\begin{enumerate}
+	\item \textbf{Xilinx ISE}
+		\begin{enumerate}
+			\item Create and submit \textbf{Verilog Code}, \textbf{Testbench} \& \textbf{Implementation Constraints File}
+			\item Take screenshots of \textbf{RTL Schematics} \& \textbf{Timing Diagram} depicting all logic gates present in the design and all possible combinations of test inputs, respectively
+			\item Report \textbf{Area}, \textbf{Power} \& \textbf{Delay} of the design
+		\end{enumerate}
+
+	\item \textbf{Cadence}
+		\begin{enumerate}
+			\item \textbf{Genus}
+				\begin{enumerate}
+					\item \textbf{Area}, \textbf{Power} \& \textbf{Timing} Reports
+					\item \textbf{Netlist} generated
+					\item Screenshot of \textbf{RTL Schematic}
+				\end{enumerate}
+			\item \textbf{NCLaunch}
+				\begin{enumerate}
+					\item Screenshot of \textbf{Timing Diagram}
+				\end{enumerate}
+			\item \textbf{Innovus}
+				\begin{enumerate}
+					\item \textbf{Area} \& \textbf{Power} report
+					\item \textbf{Timing}(pre-place, post-place, post-rout, \& sign-off) report
+					\item Screenshot of \textbf{Physical Design}
+				\end{enumerate}
+		\end{enumerate}
+
+
+\end{enumerate}
+
+
+\section{Procedure}
+The following procedure will be followed:
+\begin{enumerate}
+	\item Write the required Verilog code and testbench using \textbf{Xilinx ISE}
+	\item Using the above, generate the RTL Schematics and Timing Diagram in Xilinx
+	\item The Area, Power \& Delay reports can also be generated now
+	\item Using the Verilog code already written, use \textbf{Cadence NCLaunch} to generate a Timing Diagram
+	\item Next, use \textbf{Cadence Genus} to generate Area, Power and Timing reports of the gates and sequential circuits generated. The netlist will also be generated here
+	\item Use the generated netlist with \textbf{Cadence Innovus} to optimize the design. The Timing reports for pre-placement, post-placement, pre-rout, post-rout \& sign-off are then generated along with the Power and Area reports. The optimized netlist is also generated.
+	\item \textbf{Cadence Innovus} will also generate the physical design
+\end{enumerate}
+
+\section{Result \& Discussion}
+
+The attached screenshots show the values for the function for all values of the input. \\
+Tabulating the values observed in the reports from Genus(without optimization) and Innovus(with optimization): \\
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	\textbf{Design} & \multicolumn{2}{|c|}{\textbf{Genus}} & \multicolumn{2}{|c|}{\textbf{Innovus}} \\
+	\hline
+     & \textbf{Area}\textit{(units)} & \textbf{Power}\textit{(nW)} & \textbf{Area}\textit{(units)} & \textbf{Power}\textit{(nW)} \\
+     \hline
+    Shift Register & 148 & 4008.869 & 148.3524 & 3912 \\
+     \hline
+    FSM & 182 & 5054 & 174.087 & 4704.965 \\
+     \hline
+
+\end{tabular} \\
+\\
+
+\begin{enumerate}
+	\item We observe that the \textbf{power} dissipated by the design is proportional to the \textbf{area/size} of the design.
+	\item We can also observe that the power consumed by the design \textbf{can be significantly reduced} by optimizing the design.
+\end{enumerate}
+
+\section{Conclusion}
+
+We can conclude that:
+\begin{itemize}
+	\item The required designs were successfully implemented using \textbf{Xilinx ISE} and \textbf{Cadence}
+	\item We can construct more complicated circuits using self-made building blocks
+	\item The power dissipated by the circuits is \textbf{proportional} to the size of the design
+	\item The power consumption of the design can be significantly reduced by \textbf{optimizing the design} appropriately
+\end{itemize}
+
+\section{References}
+\begin{enumerate}
+	\item \textit{www.asic-world.com}
+	\item \textit{www.xilinx.com}
+	\item \textit{www.cadence.com}
+	\item \textit{electronics.stackexchange.com}
+	\item \textit{Tutorials and Lab Sessions}
+\end{enumerate}
+
+
+
+
+\end{document}
+
