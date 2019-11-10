@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ahish/Desktop/VLSI-Assignment-7/fsm/fsmtb2_isim_beh.exe" -prj "/home/ahish/Desktop/VLSI-Assignment-7/fsm/fsmtb2_beh.prj" "work.fsmtb2" "work.glbl" 
