@@ -64,7 +64,7 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="fsm_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="fsm_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fsm_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fsmtb2_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fsmtb2_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="fsmtb2_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="fsmtb2_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="fsmtb_isim_beh.exe"/>
@@ -125,9 +125,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1573393837" xil_pn:in_ck="8613038464678988647" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5282318524472590430" xil_pn:start_ts="1573393837">
+    <transform xil_pn:end_ts="1573394311" xil_pn:in_ck="8613038464678988647" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5282318524472590430" xil_pn:start_ts="1573394311">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fsmtb2_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -160,13 +162,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573393422" xil_pn:in_ck="125217034" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-565922806371329543" xil_pn:start_ts="1573393416">
+    <transform xil_pn:end_ts="1573394232" xil_pn:in_ck="125217034" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-565922806371329543" xil_pn:start_ts="1573394227">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="fsm.lso"/>
       <outfile xil_pn:name="fsm.ngc"/>
@@ -176,6 +174,7 @@
       <outfile xil_pn:name="fsm.syr"/>
       <outfile xil_pn:name="fsm.xst"/>
       <outfile xil_pn:name="fsm_xst.xrpt"/>
+      <outfile xil_pn:name="fsmtb2_beh.prj"/>
       <outfile xil_pn:name="fsmtv_beh.prj"/>
       <outfile xil_pn:name="fsmtv_stx_beh.prj"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
@@ -188,7 +187,8 @@
     <transform xil_pn:end_ts="1573393426" xil_pn:in_ck="136361344812" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9049877881301330455" xil_pn:start_ts="1573393422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="fsm.bld"/>

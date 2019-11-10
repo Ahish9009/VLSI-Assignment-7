@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: fsm.prj
@@ -134,34 +134,59 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <fsm>.
     Related source file is "fsm.v".
-    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 9                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
     Found 1-bit register for signal <flag0>.
     Found 1-bit register for signal <flag1>.
     Summary:
-	inferred   6 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+	inferred   2 D-type flip-flop(s).
 Unit <fsm> synthesized.
 
 
 =========================================================================
 HDL Synthesis Report
 
-Macro Statistics
-# Registers                                            : 1
- 4-bit register                                        : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0100  | 0100
+ 0001  | 0001
+ 0101  | 0101
+ 0011  | 0011
+ 0111  | 0111
+ 1111  | 1111
+ 1101  | 1101
+ 1100  | 1100
+-------------------
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 4
- Flip-Flops                                            : 4
+# FSMs                                                 : 1
 
 =========================================================================
 
@@ -208,20 +233,19 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 9
+# IOs                              : 5
 
 Cell Usage :
-# BELS                             : 6
-#      LUT3                        : 2
-#      LUT3_D                      : 1
-#      LUT4                        : 3
+# BELS                             : 5
+#      LUT2                        : 3
+#      LUT4                        : 2
 # FlipFlops/Latches                : 4
 #      FDRS                        : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
+# IO Buffers                       : 4
 #      IBUF                        : 3
-#      OBUF                        : 5
+#      OBUF                        : 1
 =========================================================================
 
 Device utilization summary:
@@ -231,9 +255,9 @@ Selected Device : 3s500efg320-5
 
  Number of Slices:                        3  out of   4656     0%  
  Number of Slice Flip Flops:              4  out of   9312     0%  
- Number of 4 input LUTs:                  6  out of   9312     0%  
- Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    232     3%  
+ Number of 4 input LUTs:                  5  out of   9312     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -268,9 +292,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 3.000ns (Maximum Frequency: 333.328MHz)
-   Minimum input arrival time before clock: 3.588ns
-   Maximum output required time after clock: 5.373ns
+   Minimum period: 2.001ns (Maximum Frequency: 499.738MHz)
+   Minimum input arrival time before clock: 2.637ns
+   Maximum output required time after clock: 5.259ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -279,78 +303,76 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.000ns (frequency: 333.328MHz)
-  Total number of paths / destination ports: 16 / 8
+  Clock period: 2.001ns (frequency: 499.738MHz)
+  Total number of paths / destination ports: 10 / 8
 -------------------------------------------------------------------------
-Delay:               3.000ns (Levels of Logic = 2)
-  Source:            state_2 (FF)
-  Destination:       state_1 (FF)
+Delay:               2.001ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd1 (FF)
+  Destination:       state_FSM_FFd2 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: state_2 to state_1
+  Data Path: state_FSM_FFd1 to state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q             5   0.514   0.607  state_2 (state_2)
-     LUT3_D:I1->O          1   0.612   0.387  state_mux0000<2>11 (N01)
-     LUT3:I2->O            1   0.612   0.000  state_mux0000<2>12 (state_mux0000<2>1)
-     FDRS:D                    0.268          state_1
+     FDRS:C->Q             5   0.514   0.607  state_FSM_FFd1 (state_FSM_FFd1)
+     LUT2:I1->O            1   0.612   0.000  state_FSM_FFd2-In11 (state_FSM_FFd2-In1)
+     FDRS:D                    0.268          state_FSM_FFd2
     ----------------------------------------
-    Total                      3.000ns (2.006ns logic, 0.994ns route)
-                                       (66.9% logic, 33.1% route)
+    Total                      2.001ns (1.394ns logic, 0.607ns route)
+                                       (69.7% logic, 30.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 10 / 8
 -------------------------------------------------------------------------
-Offset:              3.588ns (Levels of Logic = 3)
+Offset:              2.637ns (Levels of Logic = 2)
   Source:            ONE (PAD)
-  Destination:       state_1 (FF)
+  Destination:       state_FSM_FFd1 (FF)
   Destination Clock: CLK rising
 
-  Data Path: ONE to state_1
+  Data Path: ONE to state_FSM_FFd1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.106   0.603  ONE_IBUF (ONE_IBUF)
-     LUT3_D:I0->O          1   0.612   0.387  state_mux0000<2>11 (N01)
-     LUT3:I2->O            1   0.612   0.000  state_mux0000<2>12 (state_mux0000<2>1)
-     FDRS:D                    0.268          state_1
+     IBUF:I->O             4   1.106   0.651  ONE_IBUF (ONE_IBUF)
+     LUT2:I0->O            1   0.612   0.000  state_FSM_FFd1-In11 (state_FSM_FFd1-In1)
+     FDRS:D                    0.268          state_FSM_FFd1
     ----------------------------------------
-    Total                      3.588ns (2.598ns logic, 0.990ns route)
-                                       (72.4% logic, 27.6% route)
+    Total                      2.637ns (1.986ns logic, 0.651ns route)
+                                       (75.3% logic, 24.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 8 / 5
+  Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              5.373ns (Levels of Logic = 2)
-  Source:            state_1 (FF)
+Offset:              5.259ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd1 (FF)
   Destination:       OUT (PAD)
   Source Clock:      CLK rising
 
-  Data Path: state_1 to OUT
+  Data Path: state_FSM_FFd1 to OUT
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q             6   0.514   0.721  state_1 (state_1)
-     LUT4:I0->O            1   0.612   0.357  OUT1 (OUT_OBUF)
+     FDRS:C->Q             5   0.514   0.607  state_FSM_FFd1 (state_FSM_FFd1)
+     LUT2:I1->O            1   0.612   0.357  OUT1 (OUT_OBUF)
      OBUF:I->O                 3.169          OUT_OBUF (OUT)
     ----------------------------------------
-    Total                      5.373ns (4.295ns logic, 1.078ns route)
-                                       (79.9% logic, 20.1% route)
+    Total                      5.259ns (4.295ns logic, 0.964ns route)
+                                       (81.7% logic, 18.3% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.85 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.94 secs
  
 --> 
 
 
-Total memory usage is 517440 kilobytes
+Total memory usage is 518332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
