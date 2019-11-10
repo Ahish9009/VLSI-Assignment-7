@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="shiftregister.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="shiftregister.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="shiftregister.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="shiftregister.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="shiftregister.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="shiftregister.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="shiftregister.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="shiftregister.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="shiftregister.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="shiftregister.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="shiftregister.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shiftregister.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="shiftregister.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="shiftregister.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="shiftregister.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="shiftregister.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="shiftregister.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="shiftregister.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="shiftregister.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="shiftregister.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="shiftregister_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="shiftregister_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shiftregister_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="shiftregister_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="shiftregister_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="shiftregister_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="shiftregister_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="shiftregister_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="shiftregister_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="shiftregister_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="shiftregister_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="shiftregister_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="shiftregister_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="shiftregister_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="shiftregister_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="shiftregister_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shifttb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shifttb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="shifttb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1573399271" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1573399271">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400199" xil_pn:in_ck="3135246973590092543" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1573400199">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="shiftregister.v"/>
+      <outfile xil_pn:name="shifttb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400213" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5324789620992127883" xil_pn:start_ts="1573400213">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400213" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="571799714720014477" xil_pn:start_ts="1573400213">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399271" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1450432362068803357" xil_pn:start_ts="1573399271">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400199" xil_pn:in_ck="3135246973590092543" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1573400199">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="shiftregister.v"/>
+      <outfile xil_pn:name="shifttb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400214" xil_pn:in_ck="3135246973590092543" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-614787442651349833" xil_pn:start_ts="1573400213">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="shifttb_beh.prj"/>
+      <outfile xil_pn:name="shifttb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400214" xil_pn:in_ck="6438070946590054165" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2188106325499473242" xil_pn:start_ts="1573400214">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="shifttb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7937220312691372612" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1450432362068803357" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="74648232123718970" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573399618" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="709311164656931885" xil_pn:start_ts="1573399618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400086" xil_pn:in_ck="7365764838598665031" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-129986557654446890" xil_pn:start_ts="1573400081">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="shiftregister.lso"/>
+      <outfile xil_pn:name="shiftregister.ngc"/>
+      <outfile xil_pn:name="shiftregister.ngr"/>
+      <outfile xil_pn:name="shiftregister.prj"/>
+      <outfile xil_pn:name="shiftregister.stx"/>
+      <outfile xil_pn:name="shiftregister.syr"/>
+      <outfile xil_pn:name="shiftregister.xst"/>
+      <outfile xil_pn:name="shiftregister_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400086" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4398260265847939813" xil_pn:start_ts="1573400086">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400090" xil_pn:in_ck="-3015762829708739415" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5885695365528530874" xil_pn:start_ts="1573400086">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="shiftregister.bld"/>
+      <outfile xil_pn:name="shiftregister.ngd"/>
+      <outfile xil_pn:name="shiftregister_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400094" xil_pn:in_ck="-3015762829708739414" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1573400090">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="shiftregister.pcf"/>
+      <outfile xil_pn:name="shiftregister_map.map"/>
+      <outfile xil_pn:name="shiftregister_map.mrp"/>
+      <outfile xil_pn:name="shiftregister_map.ncd"/>
+      <outfile xil_pn:name="shiftregister_map.ngm"/>
+      <outfile xil_pn:name="shiftregister_map.xrpt"/>
+      <outfile xil_pn:name="shiftregister_summary.xml"/>
+      <outfile xil_pn:name="shiftregister_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400104" xil_pn:in_ck="-1729758123293847357" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1573400094">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="shiftregister.ncd"/>
+      <outfile xil_pn:name="shiftregister.pad"/>
+      <outfile xil_pn:name="shiftregister.par"/>
+      <outfile xil_pn:name="shiftregister.ptwx"/>
+      <outfile xil_pn:name="shiftregister.unroutes"/>
+      <outfile xil_pn:name="shiftregister.xpi"/>
+      <outfile xil_pn:name="shiftregister_pad.csv"/>
+      <outfile xil_pn:name="shiftregister_pad.txt"/>
+      <outfile xil_pn:name="shiftregister_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1573400104" xil_pn:in_ck="-3015762829708739546" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1573400101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="shiftregister.twr"/>
+      <outfile xil_pn:name="shiftregister.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

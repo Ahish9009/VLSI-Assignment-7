@@ -1,0 +1,22 @@
+Running: /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shifttb_isim_beh.exe -prj /home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shifttb_beh.prj work.shifttb work.glbl 
+ISim O.87xd (signature 0x8ddf5b5d)
+Number of CPUs detected in this system: 3
+Turning on mult-threading, number of parallel sub-compilation jobs: 6 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.v" into library work
+Analyzing Verilog file "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shifttb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95028 KB
+Fuse CPU Usage: 900 ms
+Compiling module shiftregister
+Compiling module shifttb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable /home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shifttb_isim_beh.exe
+Fuse Memory Usage: 524132 KB
+Fuse CPU Usage: 910 ms
+GCC CPU Usage: 240 ms

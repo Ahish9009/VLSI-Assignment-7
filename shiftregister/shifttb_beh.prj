@@ -1,0 +1,3 @@
+verilog work "shiftregister.v"
+verilog work "shifttb.v"
+verilog work "/opt/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

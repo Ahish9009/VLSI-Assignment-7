@@ -165,6 +165,8 @@
     <transform xil_pn:end_ts="1573394232" xil_pn:in_ck="125217034" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-565922806371329543" xil_pn:start_ts="1573394227">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="fsm.lso"/>
       <outfile xil_pn:name="fsm.ngc"/>
@@ -184,21 +186,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573393426" xil_pn:in_ck="136361344812" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9049877881301330455" xil_pn:start_ts="1573393422">
+    <transform xil_pn:end_ts="1573394497" xil_pn:in_ck="136361344812" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9049877881301330455" xil_pn:start_ts="1573394493">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="fsm.bld"/>
       <outfile xil_pn:name="fsm.ngd"/>
       <outfile xil_pn:name="fsm_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1573393429" xil_pn:in_ck="136361344813" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1573393426">
+    <transform xil_pn:end_ts="1573394500" xil_pn:in_ck="136361344813" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1573394497">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="fsm.pcf"/>
       <outfile xil_pn:name="fsm_map.map"/>
@@ -209,10 +208,9 @@
       <outfile xil_pn:name="fsm_summary.xml"/>
       <outfile xil_pn:name="fsm_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1573393440" xil_pn:in_ck="161715869195410630" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1573393429">
+    <transform xil_pn:end_ts="1573394511" xil_pn:in_ck="161715869195410630" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1573394500">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="fsm.ncd"/>
       <outfile xil_pn:name="fsm.pad"/>
@@ -229,17 +227,15 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1573393440" xil_pn:in_ck="136361344681" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1573393438">
+    <transform xil_pn:end_ts="1573394511" xil_pn:in_ck="136361344681" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1573394509">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="fsm.twr"/>
       <outfile xil_pn:name="fsm.twx"/>

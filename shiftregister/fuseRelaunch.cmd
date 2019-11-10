@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shifttb_isim_beh.exe" -prj "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shifttb_beh.prj" "work.shifttb" "work.glbl" 
