@@ -4,7 +4,7 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr
-shiftregister.pcf
+shiftregister.pcf -ucf constraintsshift.ucf
 
 Design file:              shiftregister.ncd
 Physical constraint file: shiftregister.pcf
@@ -45,15 +45,15 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-CLEAR       |    0.171(R)|    1.011(R)|CLK_BUFGP         |   0.000|
-p_input<0>  |    0.678(R)|    0.591(R)|CLK_BUFGP         |   0.000|
-p_input<1>  |    0.740(R)|    0.540(R)|CLK_BUFGP         |   0.000|
-p_input<2>  |    0.752(R)|    0.532(R)|CLK_BUFGP         |   0.000|
-p_input<3>  |    0.241(R)|    0.942(R)|CLK_BUFGP         |   0.000|
-s_inp_l     |    0.768(R)|    0.518(R)|CLK_BUFGP         |   0.000|
-s_inp_r     |    0.198(R)|    0.976(R)|CLK_BUFGP         |   0.000|
-s_line<0>   |    1.049(R)|    0.828(R)|CLK_BUFGP         |   0.000|
-s_line<1>   |    0.719(R)|    0.893(R)|CLK_BUFGP         |   0.000|
+CLEAR       |    3.053(R)|   -0.108(R)|CLK_BUFGP         |   0.000|
+p_input<0>  |    1.091(R)|    0.257(R)|CLK_BUFGP         |   0.000|
+p_input<1>  |    0.975(R)|    0.351(R)|CLK_BUFGP         |   0.000|
+p_input<2>  |    1.727(R)|   -0.261(R)|CLK_BUFGP         |   0.000|
+p_input<3>  |    1.849(R)|   -0.359(R)|CLK_BUFGP         |   0.000|
+s_inp_l     |    0.486(R)|    0.742(R)|CLK_BUFGP         |   0.000|
+s_inp_r     |    1.023(R)|    0.302(R)|CLK_BUFGP         |   0.000|
+s_line<0>   |    2.035(R)|    0.306(R)|CLK_BUFGP         |   0.000|
+s_line<1>   |    1.259(R)|    0.509(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -61,10 +61,11 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-p_output<0> |    7.014(R)|CLK_BUFGP         |   0.000|
-p_output<1> |    7.043(R)|CLK_BUFGP         |   0.000|
-p_output<2> |    7.323(R)|CLK_BUFGP         |   0.000|
-p_output<3> |    7.037(R)|CLK_BUFGP         |   0.000|
+dividedclock|   10.421(R)|CLK_BUFGP         |   0.000|
+p_output<0> |    8.097(R)|CLK_BUFGP         |   0.000|
+p_output<1> |    7.999(R)|CLK_BUFGP         |   0.000|
+p_output<2> |    9.580(R)|CLK_BUFGP         |   0.000|
+p_output<3> |    9.101(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -72,11 +73,11 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.018|         |         |         |
+CLK            |    4.714|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Nov 10 21:05:03 2019 
+Analysis completed Sun Nov 24 03:55:43 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

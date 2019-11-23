@@ -4,3 +4,130 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 shiftregist
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
 par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister_preroute.twx shiftregister_map.ncd -o shiftregister_preroute.twr shiftregister.pcf -ucf constraintsshift.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 
+xst -intstyle ise -ifn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.xst" -ofn "/home/ahish/Desktop/VLSI-Assignment-7/shiftregister/shiftregister.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraintsshift.ucf -p xc3s500e-fg320-5 shiftregister.ngc shiftregister.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o shiftregister_map.ncd shiftregister.ngd shiftregister.pcf 
+par -w -intstyle ise -ol high -t 1 shiftregister_map.ncd shiftregister.ncd shiftregister.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml shiftregister.twx shiftregister.ncd -o shiftregister.twr shiftregister.pcf -ucf constraintsshift.ucf 
+bitgen -intstyle ise -f shiftregister.ut shiftregister.ncd 

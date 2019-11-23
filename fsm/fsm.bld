@@ -2,12 +2,14 @@ Release 13.4 ngdbuild O.87xd (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 fsm.ngc fsm.ngd
+ise -dd _ngo -nt timestamp -uc constraintsfsm.ucf -p xc3s500e-fg320-5 fsm.ngc
+fsm.ngd
 
 Reading NGO file "/home/ahish/Desktop/VLSI-Assignment-7/fsm/fsm.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file "constraintsfsm.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 Done...
@@ -25,7 +27,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 396452 kilobytes
+Total memory usage is 396988 kilobytes
 
 Writing NGD file "fsm.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec

@@ -3,7 +3,7 @@ Release 13.4 Trace  (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 /opt/Xilinx/13.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
-3 -fastpaths -xml fsm.twx fsm.ncd -o fsm.twr fsm.pcf
+3 -fastpaths -xml fsm.twx fsm.ncd -o fsm.twr fsm.pcf -ucf constraintsfsm.ucf
 
 Design file:              fsm.ncd
 Physical constraint file: fsm.pcf
@@ -44,9 +44,9 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-ONE         |    0.774(R)|    0.914(R)|CLK_BUFGP         |   0.000|
-RESET       |    1.069(R)|    0.847(R)|CLK_BUFGP         |   0.000|
-ZERO        |    0.572(R)|    0.929(R)|CLK_BUFGP         |   0.000|
+ONE         |    2.021(R)|   -0.414(R)|CLK_BUFGP         |   0.000|
+RESET       |    1.443(R)|    0.304(R)|CLK_BUFGP         |   0.000|
+ZERO        |    2.100(R)|   -0.517(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -54,7 +54,11 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-OUT         |    8.047(R)|CLK_BUFGP         |   0.000|
+OUT         |    9.923(R)|CLK_BUFGP         |   0.000|
+state<0>    |    7.710(R)|CLK_BUFGP         |   0.000|
+state<1>    |    8.647(R)|CLK_BUFGP         |   0.000|
+state<2>    |    8.624(R)|CLK_BUFGP         |   0.000|
+state<3>    |    9.877(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -62,11 +66,11 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.096|         |         |         |
+CLK            |    4.509|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Nov 10 19:31:51 2019 
+Analysis completed Sun Nov 24 04:09:26 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

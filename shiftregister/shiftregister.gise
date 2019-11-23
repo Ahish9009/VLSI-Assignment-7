@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -32,8 +33,11 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="shiftregister.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="shiftregister.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="shiftregister.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="shiftregister.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="shiftregister.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="shiftregister.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="shiftregister.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="shiftregister.ngc"/>
@@ -49,6 +53,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="shiftregister.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="shiftregister.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="shiftregister.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="shiftregister.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="shiftregister.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="shiftregister.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="shiftregister_envsettings.html"/>
@@ -63,6 +68,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="shiftregister_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="shiftregister_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="shiftregister_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="shiftregister_preroute.twr" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="shiftregister_preroute.twx" xil_pn:subbranch="Map"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="shiftregister_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="shiftregister_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="shiftregister_usage.xml"/>
@@ -70,6 +77,8 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shifttb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shifttb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="shifttb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -84,6 +93,10 @@
     <transform xil_pn:end_ts="1573400199" xil_pn:in_ck="3135246973590092543" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1573400199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="shiftregister.v"/>
       <outfile xil_pn:name="shifttb.v"/>
     </transform>
@@ -102,13 +115,21 @@
     <transform xil_pn:end_ts="1573400199" xil_pn:in_ck="3135246973590092543" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1573400199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="shiftregister.v"/>
       <outfile xil_pn:name="shifttb.v"/>
     </transform>
     <transform xil_pn:end_ts="1573400214" xil_pn:in_ck="3135246973590092543" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-614787442651349833" xil_pn:start_ts="1573400213">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -120,6 +141,7 @@
     <transform xil_pn:end_ts="1573400214" xil_pn:in_ck="6438070946590054165" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2188106325499473242" xil_pn:start_ts="1573400214">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -154,7 +176,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573400086" xil_pn:in_ck="7365764838598665031" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-129986557654446890" xil_pn:start_ts="1573400081">
+    <transform xil_pn:end_ts="1574547924" xil_pn:in_ck="7365764838598665031" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-129986557654446890" xil_pn:start_ts="1574547919">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -171,11 +193,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1573400086" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4398260265847939813" xil_pn:start_ts="1573400086">
+    <transform xil_pn:end_ts="1574546453" xil_pn:in_ck="6585766204169346050" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4398260265847939813" xil_pn:start_ts="1574546453">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1573400090" xil_pn:in_ck="-3015762829708739415" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5885695365528530874" xil_pn:start_ts="1573400086">
+    <transform xil_pn:end_ts="1574547928" xil_pn:in_ck="-7582743150134076181" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5885695365528530874" xil_pn:start_ts="1574547924">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -184,9 +206,11 @@
       <outfile xil_pn:name="shiftregister.ngd"/>
       <outfile xil_pn:name="shiftregister_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1573400094" xil_pn:in_ck="-3015762829708739414" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1573400090">
+    <transform xil_pn:end_ts="1574547931" xil_pn:in_ck="-7582743150134076180" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1574547928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="shiftregister.pcf"/>
       <outfile xil_pn:name="shiftregister_map.map"/>
@@ -197,7 +221,7 @@
       <outfile xil_pn:name="shiftregister_summary.xml"/>
       <outfile xil_pn:name="shiftregister_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1573400104" xil_pn:in_ck="-1729758123293847357" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1573400094">
+    <transform xil_pn:end_ts="1574547944" xil_pn:in_ck="-4857831692484951547" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1574547931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -211,12 +235,35 @@
       <outfile xil_pn:name="shiftregister_pad.txt"/>
       <outfile xil_pn:name="shiftregister_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1573400104" xil_pn:in_ck="-3015762829708739546" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1573400101">
+    <transform xil_pn:end_ts="1574547948" xil_pn:in_ck="-3015762829708739546" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="2969983391363831627" xil_pn:start_ts="1574547944">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="shiftregister.bgn"/>
+      <outfile xil_pn:name="shiftregister.bit"/>
+      <outfile xil_pn:name="shiftregister.drc"/>
+      <outfile xil_pn:name="shiftregister.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1574547944" xil_pn:in_ck="-7582743150134076312" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1574547941">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="shiftregister.twr"/>
       <outfile xil_pn:name="shiftregister.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1574545258" xil_pn:in_ck="-4857831692484951547" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="722859607460791355" xil_pn:start_ts="1574545256">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="shiftregister_preroute.twr"/>
+      <outfile xil_pn:name="shiftregister_preroute.twx"/>
     </transform>
   </transforms>
 

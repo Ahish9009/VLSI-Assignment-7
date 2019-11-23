@@ -25,32 +25,64 @@ module shiftregister(
     input [1:0] s_line,
     input s_inp_l,
     input s_inp_r,
-	 output reg [3:0] p_output=4'b0000
+	 output dividedclock,
+	 output [3:0] p_output
     );
+	 
+	// wire dividedclock; 
+	 clockdivider DIV1(CLK, dividedclock);
+	 reg [3:0] tmp = 4'b0000;
 	 
 	 always @(posedge CLK) begin
 	 
+			if (dividedclock == 1) begin
 			//clear
 			if (CLEAR) begin
-				p_output <= 0;
+				tmp = 0;
 			end
 			//parallel output
 			else if (s_line == 2'b11) begin
-					p_output[3:0] <= p_input;
+					tmp[3:0] = p_input;
 			end
 			//right shift
 			else if (s_line == 2'b01) begin
-					p_output <= {s_inp_r, p_output[3:1]};
+					tmp[3:0] = {s_inp_r, tmp[3:1]};
 			end
 			//left shift
 			else if (s_line == 2'b10) begin
-					p_output <= {p_output[2:0], s_inp_l};
+					tmp[3:0] = {tmp[2:0], s_inp_l};
+			end
+			else if (s_line == 2'b00) begin
+					tmp[3:0] = tmp;
+			end
+			
 			end
 	end
-			
-	 
-	 
-	 
-
-
+	
+	assign p_output[3:0] = tmp;
 endmodule
+	
+module clockdivider(
+	input CLK,
+	output dividedclk
+	);
+	
+	reg [28:0] counter=28'd0;
+	
+	parameter DIVISOR = 28'd100000000;
+	
+	always @(posedge CLK)
+	begin
+		counter <= counter + 28'd1;
+		if(counter>=(DIVISOR-1))
+			counter <= 28'd0;
+		end
+		
+	assign dividedclk = (counter == DIVISOR-2) ? 1 : 0;
+		
+	
+		
+endmodule
+	 
+	 
+	 

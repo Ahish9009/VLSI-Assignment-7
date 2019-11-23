@@ -14,7 +14,7 @@
 // Dependencies: 
 //
 // Revision: 
-// Revision 0.01 - File Created
+// Revision 0.01 - 	File Created
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
@@ -23,12 +23,17 @@ module fsm(
 	input RESET,
 	input ONE,
 	input ZERO,
-	output OUT
+	output OUT,
+	output reg [3:0] state = 4'b0000
 );
 
 reg flag0=1, flag1=1;
-reg [3:0] state = 4'b0000;
+//reg [3:0] state = 4'b0000;
 assign OUT = state[0]&state[1]&state[2]&state[3];
+
+wire dividedclock;
+clockdivider D1(CLK, dividedclock);
+
 
 always @(negedge ONE) begin
 	flag1 <= 1;
@@ -39,6 +44,7 @@ end
 
 always @(posedge CLK) begin
 
+	if (dividedclock == 1) begin
 	if (RESET) begin
 		state <= 4'b0000;
 		flag1 <= 1;
@@ -115,11 +121,34 @@ always @(posedge CLK) begin
 			end
 		end
 		end
+		
+		end
 
 
 end
 
 
-
-
 endmodule
+
+module clockdivider(
+          input CLK,
+          output dividedclk
+          );
+      
+          reg [28:0] counter=28'd0;
+      
+          parameter DIVISOR = 28'd100000000;
+      
+          always @(posedge CLK)
+          begin
+                  counter <= counter + 28'd1;
+                  if(counter>=(DIVISOR-1))
+                          counter <= 28'd0;
+                  end
+      
+          assign dividedclk = (counter == DIVISOR-2) ? 1 : 0;
+      
+      
+      
+  endmodule
+

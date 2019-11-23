@@ -1,0 +1,17 @@
+net "CLK" loc="B8";
+net "CLEAR" loc="H13";
+net "p_input[3]" loc="R17";
+net "p_input[2]" loc="N17";
+net "p_input[1]" loc="L13";
+net "p_input[0]" loc="L14";
+net "s_inp_l" loc = "K17";
+net "s_inp_r" loc = "K18";
+net "s_line[1]" loc = "H18";
+net "s_line[0]" loc = "G18";
+net "p_output[3]" loc = "R4";
+net "p_output[2]" loc = "F4";
+net "p_output[1]" loc = "P15";
+net "p_output[0]" loc = "E17";
+net "dividedclock" loc = "J14";
+
+
